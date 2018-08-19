@@ -1,0 +1,29 @@
+{
+  "name": "messages-native",
+  "version": "0.0.1",
+  "description": "Unofficial Desktop Android Messages Client",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Android",
+    "Messages",
+    "Native",
+    "Desktop",
+    "Unoffical"
+  ],
+  "author": "AlbyFine",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "react-scripts": "^1.0.14",
+    "electron-compilers": "^5.9.0"
+  },
+  "dependencies": {
+    "electron-compile": "^6.4.3",
+    "react-scripts": "^1.0.14"
+  }
+}
