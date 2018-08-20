@@ -1,11 +1,30 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react'
+import axios from 'axios'
 
-export default class Messages extends Component {
+class Messages extends Component {
     constructor(...args) {
-        super(...args);
+        super(...args)
+        this.state = {
+            response: ''
+        }
+        this.fetchRemote()
+     }
+
+    async fetchRemote(){
+        axios.get("https://message.android.com").
+        then((response)=>{
+            console.log(response)
+            this.setState({response: response})
+        }).catch((error)=>{
+            console.log(error)
+            this.setState({response: error})
+
+        })
      }
 
      render(){
-         return(<h1>Test</h1>)
+         return(<h1></h1>)
      }
 }
+
+export default Messages 

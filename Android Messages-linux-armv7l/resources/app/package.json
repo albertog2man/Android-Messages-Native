@@ -1,0 +1,32 @@
+{
+  "name": "messages-native",
+  "version": "0.0.1",
+  "description": "Unofficial Desktop Android Messages Client",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "electron -r babel-register .",
+    "build": "electron-packager . 'Android Messages' --all --icon '/Users/agalvez/Documents/messages_native/src/public/images/icon.png'"
+  },
+  "repository": "https://github.com/albertog2man/Native-Messages",
+  "keywords": [
+    "Android",
+    "Messages",
+    "Native",
+    "Desktop",
+    "Unoffical"
+  ],
+  "author": "Albertog2man",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "axios": "0.18.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "dependencies": {
+    "electron-packager": "^12.1.1"
+  }
+}

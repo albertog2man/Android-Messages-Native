@@ -1,24 +1,23 @@
+// Modules to control application life and create native browser window
 const { app, BrowserWindow } = require('electron')
-
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-const createWindow = ()=>{
+function createWindow () {
+  // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 1050,
     height: 687,
+    icon: `${__dirname}/src/public/images/icon.png`,
     webPreferences: {
       nodeIntegration: false
     }
   })
 
   mainWindow.loadURL('https://messages.android.com');
-  // work in progress to allow for potential desktop only features
-  // mainWindow.loadURL(`file://${__dirname}/public/index.html`);
-  
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -32,9 +31,7 @@ const createWindow = ()=>{
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready',()=>{
-  createWindow()
-})
+app.on('ready', createWindow)
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
