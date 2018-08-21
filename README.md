@@ -23,7 +23,7 @@ Once up to date, you can run
 
 to run the local development version or
 
-`npm build`
+`npm run build`
 
 to create a packaged version. This command will generate a release_builds directory.
 ## Dev Requirements
