@@ -5,9 +5,9 @@
   "main": "./src/app.js",
   "scripts": {
     "start": "electron -r babel-register .",
-    "build": "electron-packager . 'Android Messages' --all --out=release-builds --icon '/Users/agalvez/Documents/messages_native/src/public/images/icon.png'"
+    "build": "electron-packager . 'Android Messages' --all --out=release-builds --overwrite --icon '/Users/agalvez/Documents/messages_native/src/public/images/icon.png'"
   },
-  "repository": "https://github.com/albertog2man/Native-Messages",
+  "repository": "https://github.com/albertog2man/Android-Messages-Native",
   "keywords": [
     "Android",
     "Messages",
@@ -27,6 +27,7 @@
     "react-dom": "^15.3.2"
   },
   "dependencies": {
+    "electron-context-menu": "^0.9.0",
     "electron-packager": "^12.1.1"
   }
 }
