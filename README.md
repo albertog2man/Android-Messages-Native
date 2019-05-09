@@ -7,7 +7,7 @@ Simple native client that allows you to use https://messages.android.com on your
 * Desktop native look and feel
 * Notifications
 ## Download
-[Download latest release](https://github.com/albertog2man/Android-Messages-Native/releases/tag/v0.0.1)
+[Download latest release](https://github.com/albertog2man/Android-Messages-Native/releases/tag/v0.0.2)
 ## Supported OS
 * Mac OS X 10.9.0 or later
 * Windows 7 or later (unverified)
